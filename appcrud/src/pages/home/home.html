@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      CRUD APP
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <button ion-button color="secondary" (click)="goAnOtherPage()">Crear Usuario</button>
+  <ion-list inset>
+    <ion-label>Lista de usuarios</ion-label>
+    <button ion-item *ngFor="let user of users" (click)="itemSelected(user.cedula)">
+      {{user.nombre}} {{user.apellido}}
+    </button> 
+  </ion-list>
+</ion-content>

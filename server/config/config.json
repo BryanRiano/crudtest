@@ -1,0 +1,6 @@
+{
+    "database": {
+        "debug": "mongodb://localhost/crud",
+        "prod": "mongodb://soporte:soporte2019@ds255282.mlab.com:55282/crud"
+    }
+}
